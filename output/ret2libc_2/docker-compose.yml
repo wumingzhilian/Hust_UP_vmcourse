@@ -1,0 +1,13 @@
+# UTAG=value DPORT=value docker-compose build
+# docker-compose up
+
+version: "3.7"
+
+services:
+  drill:
+    build: ./
+    image: wumingzhilian/ret2libc_2:v1
+    container_name: ret2libc_2
+    ports:
+      - 56105:2353
+    privileged: false

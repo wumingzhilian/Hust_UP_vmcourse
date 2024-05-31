@@ -1,0 +1,13 @@
+# UTAG=value DPORT=value docker-compose build
+# docker-compose up
+
+version: "3.7"
+
+services:
+  drill:
+    build: ./
+    image: wumingzhilian/buffer-overflow-level40:v1
+    container_name: buffer-overflow-level40
+    ports:
+      - 56105:2950
+    privileged: false

@@ -1,0 +1,13 @@
+# UTAG=value DPORT=value docker-compose build
+# docker-compose up
+
+version: "3.7"
+
+services:
+  drill:
+    build: ./
+    image: wumingzhilian/use-after-free-level11:v1
+    container_name: use-after-free-level11
+    ports:
+      - 56105:2549
+    privileged: false

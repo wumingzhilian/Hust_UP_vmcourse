@@ -1,0 +1,13 @@
+# UTAG=value DPORT=value docker-compose build
+# docker-compose up
+
+version: "3.7"
+
+services:
+  drill:
+    build: ./
+    image: wumingzhilian/setuid-backdoor-level21:v1
+    container_name: setuid-backdoor-level21
+    ports:
+      - 56105:2582
+    privileged: false

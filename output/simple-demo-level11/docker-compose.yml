@@ -1,0 +1,13 @@
+# UTAG=value DPORT=value docker-compose build
+# docker-compose up
+
+version: "3.7"
+
+services:
+  drill:
+    build: ./
+    image: wumingzhilian/simple-demo-level11:v1
+    container_name: simple-demo-level11
+    ports:
+      - 56105:2905
+    privileged: false

@@ -1,0 +1,13 @@
+# UTAG=value DPORT=value docker-compose build
+# docker-compose up
+
+version: "3.7"
+
+services:
+  drill:
+    build: ./
+    image: wumingzhilian/integer-overflow-level20:v1
+    container_name: integer-overflow-level20
+    ports:
+      - 56105:2993
+    privileged: false
