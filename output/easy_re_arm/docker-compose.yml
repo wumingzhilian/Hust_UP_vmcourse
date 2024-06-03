@@ -1,0 +1,13 @@
+# UTAG=value DPORT=value docker-compose build
+# docker-compose up
+
+version: "3.7"
+
+services:
+  drill:
+    build: ./
+    image: wumingzhilian/easy_re_arm:v1
+    container_name: easy_re_arm
+    ports:
+      - 56105:2348
+    privileged: false

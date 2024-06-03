@@ -1,0 +1,18 @@
+name: 整数溢出
+challenges:
+  - id: level-1-0
+    name: Level 1.0
+    level: 4
+
+  - id: level-1-1
+    name: Level 1.1
+    level: 4
+
+  - id: level-2-0
+    name: Level 2.0
+    level: 5
+
+  - id: level-3-0
+    name: Level 3.0
+    level: 5
+

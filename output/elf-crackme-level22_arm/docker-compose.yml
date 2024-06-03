@@ -1,0 +1,13 @@
+# UTAG=value DPORT=value docker-compose build
+# docker-compose up
+
+version: "3.7"
+
+services:
+  drill:
+    build: ./
+    image: wumingzhilian/elf-crackme-level22_arm:v1
+    container_name: elf-crackme-level22_arm
+    ports:
+      - 56105:2641
+    privileged: false

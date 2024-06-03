@@ -1,0 +1,10 @@
+name: 释放后使用
+challenges:
+  - id: level-1-0
+    name: Level 1.0
+    level: 6
+
+  - id: level-1-1
+    name: Level 1.1
+    level: 6
+

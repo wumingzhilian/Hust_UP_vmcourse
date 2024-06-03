@@ -1,0 +1,13 @@
+# UTAG=value DPORT=value docker-compose build
+# docker-compose up
+
+version: "3.7"
+
+services:
+  drill:
+    build: ./
+    image: wumingzhilian/shellcode-injection-level30_arm:v1
+    container_name: shellcode-injection-level30_arm
+    ports:
+      - 56105:2110
+    privileged: false
